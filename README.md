@@ -41,14 +41,18 @@ pip install -r requirements.txt
 
 ## 🖥 Системные пакеты
 
-### Linux
+### Linux (debian-based)
 
 ```bash
 sudo apt update
 sudo apt install libgl1 libgtk-3-dev
 ```
-
 (необходимы для корректной работы OpenCV, открытия окон и т.д.)
+
+### Linux (RHEL, Fedora, CentOS)
+```bash
+sudo dnf in mesa-libGL mesa-libGLU gtk3-devel
+```
 
 На Windows / MacOS дополнительно ничего не требуется.
 
